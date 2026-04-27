@@ -2,7 +2,9 @@ local M = {}
 
 function M.colors()
   return {
-    bg = "#2d3144",
+    -- bg = "#252838",
+    bg = "#1a1b2a",
+    bg_lighter = "#2d3144",
     fg = "#fcfcfa",
     grey = "#Bac3db",
     red = "#ff6188",
@@ -15,7 +17,6 @@ function M.colors()
     comment = "#727a9c",
     select = "#274f79",
     bg_dark = "#272b3b",
-    bg_darker = "#252838",
   }
 end
 

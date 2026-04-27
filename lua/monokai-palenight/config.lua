@@ -40,6 +40,25 @@ function M.highlights(colors)
     -- jsonFold = { fg = colors.yellow },
     htmlEndTag = { fg = colors.green },
 
+    -- TreeSitter
+    ["@attribute"] = { fg = colors.red },
+    ["@comment"] = { fg = colors.comment },
+    ["@constant.builtin"] = { fg = colors.fg },
+    ["@constructor"] = { fg = colors.blue },
+    ["@function.builtin"] = { fg = colors.green },
+    ["@keyword.directive"] = { fg = colors.yellow },
+    ["@punctuation.bracket"] = { fg = colors.orange },
+    -- ["@spell"] = { fg = colors.yellow },
+    ["@tag"] = { fg = colors.blue },
+    ["@tag.attribute"] = { fg = colors.green },
+    ["@tag.delimiter"] = { fg = colors.red },
+    ["@type.qualifier"] = { fg = colors.red },
+    ["@type.builtin"] = { fg = colors.blue },
+    ["@variable"] = { fg = colors.fg },
+    ["@variable.builtin"] = { fg = colors.blue },
+    ["@variable.member"] = { fg = colors.purple },
+    ["@variable.parameter"] = { fg = colors.purple },
+
     -- Diff
     DiffAdd = { fg = colors.green, bg = colors.bg },
     DiffChange = { fg = colors.yellow, bg = colors.bg },
@@ -61,25 +80,6 @@ function M.highlights(colors)
     BufferLineTabSelected = { fg = colors.purple },
     BufferlineIndicatorSelected = { fg = colors.purple },
     BufferLineBackground = { bg = colors.bg_dark },
-
-    -- TreeSitter
-    ["@attribute"] = { fg = colors.red },
-    ["@comment"] = { fg = colors.comment },
-    ["@constant.builtin"] = { fg = colors.fg },
-    ["@constructor"] = { fg = colors.blue },
-    ["@function.builtin"] = { fg = colors.green },
-    ["@keyword.directive"] = { fg = colors.yellow },
-    ["@punctuation.bracket"] = { fg = colors.orange },
-    -- ["@spell"] = { fg = colors.yellow },
-    ["@tag"] = { fg = colors.blue },
-    ["@tag.attribute"] = { fg = colors.green },
-    ["@tag.delimiter"] = { fg = colors.red },
-    ["@type.qualifier"] = { fg = colors.red },
-    ["@type.builtin"] = { fg = colors.blue },
-    ["@variable"] = { fg = colors.fg },
-    ["@variable.builtin"] = { fg = colors.blue },
-    ["@variable.member"] = { fg = colors.purple },
-    ["@variable.parameter"] = { fg = colors.purple },
 
     -- Nvim-cmp
     CmpDocumentation = { fg = colors.blue, bg = colors.bg_dark },
